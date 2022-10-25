@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOUNG BAR</title>
+  <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/menu.css">
+  <link rel="stylesheet" href="stylesheets/header.css">
+  <link rel="stylesheet" href="stylesheets/footer.css">
+  <script defer src="javascripts/menu.js"></script>
+  <script defer src="javascripts/header_footer.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>
+      <a href="/" class="header__homelink">
+        YOUNG BAR
+      </a>
+    </h1>
+    <input type="checkbox" class="header__menu-btn">
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="menu">메뉴</a>
+        </li> 
+        <li class="header__nav-item">
+          <a href="notice">게시판</a>
+        </li>
+        <li class="header__nav-item item__on">
+          <a href="signup">회원가입</a>
+        </li>
+        <li class="header__nav-item item__on">
+          <a href="login">로그인</a>
+        </li>
+        <li class="header__nav-item item__none">
+          <a href="edit">회원정보수정</a>
+        </li>
+        <li class="header__nav-item item__none">
+          <a href="/" class="header__logout">로그아웃</a>
+        </li>
+        <li class="header__nav-item item__none" id="header__username">
+          <span class="header__username"></span>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="section__menu">
+    <div class="main__span">
+      <span>Menu</span>
+    </div>
+    <div class="main__div">
+      <div class="main__select">
+        <button class="main__tab" id="tab__Recommend" >추천</button>
+        <button class="main__tab menu__none" id="tab__Non">Non</button>
+        <button class="main__tab menu__none" id="tab__Easy">Easy</button>
+        <button class="main__tab menu__none" id="tab__Normal">Normal</button>
+        <button class="main__tab menu__none" id="tab__Hard">Hard</button>
+        <button class="main__tab menu__none" id="tab__ExtraHard">Extra Hard</button>
+      </div>
+
+      <div id="main__content">
+        <div id="tab__recommend" data-tab-content class="menu__recommend main__menu active">
+          <span>사장님이 직접 추천해주시는 Best Cocktail !!!</span>
+          <article class="article__menu01">
+            <div class="thumbnail">
+              <div class="image"></div>
+            </div>
+            <div class="article__text01">
+              <h2>Jin & Tonic</h2>
+              <div>재료 : Jin, Tonic Water</div>
+              <div>진과 토닉워터의 깔끔하고 청량한 맛</div>
+              <h3>8,000 원</h3>
+          </div>
+          </article>
+        </div>
+
+        <div id="tab__Easy" data-tab-content class="menu__Easy main__menu">
+          <h1>Easy Cocktail</h1>
+          <article class="article__menu01">
+            <div class="thumbnail">
+              <div class="image"></div>
+            </div>
+            <div class="article__text01">
+              <h2>Jin & Tonic</h2>
+              <div>재료 : Jin, Tonic Water</div>
+              <div>진과 토닉워터의 깔끔하고 청량한 맛</div>
+              <h3>8,000 원</h3>
+          </div>
+          </article>
+        </div>
+
+        <div id="tab__Normal" data-tab-content class="menu__Normal main__menu">
+          <h1>Normal Cocktail</h1>
+          <article class="article__menu01">
+            <div class="thumbnail">
+              <div class="image"></div>
+            </div>
+            <div class="article__text01">
+              <h2>Jin & Tonic</h2>
+              <div>재료 : Jin, Tonic Water</div>
+              <div>진과 토닉워터의 깔끔하고 청량한 맛</div>
+              <h3>8,000 원</h3>
+          </div>
+          </article>
+        </div>
+      </div>
+      
+      <!-- <div class="main__menu">
+        <h1>사장님이 직접 추천해주시는 Best Cocktail !!!</h1>
+        <article class="article__menu01">
+          <div class="thumbnail">
+            <div class="image"></div>
+          </div>
+          <div class="article__text01">
+            <h2>Jin & Tonic</h2>
+            <div>재료 : Jin, Tonic Water</div>
+            <div>진과 토닉워터의 깔끔하고 청량한 맛</div>
+            <h3>8,000 원</h3>
+        </div>
+        </article>
+      </div> -->
+    </div>
+  </section>
+
+  <footer>
+    <h1 class="sr-only">Copyright</h1>
+    <div>
+      대표 : 권영주, 이경호<br>
+      TEL : 010-1234-5678<br>
+      E-Mail : youngbar@google.com
+    </div>
+  </footer>
+</body>
+</html>

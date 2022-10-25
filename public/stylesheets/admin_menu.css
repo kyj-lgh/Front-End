@@ -1,0 +1,13 @@
+#adminmenu {
+  width: 100vw;
+  height: 100vh;
+}
+
+.adminmenu__div {
+  display: inline-flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 10vw;
+  justify-content: center;
+  align-items: center;
+}

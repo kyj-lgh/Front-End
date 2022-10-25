@@ -1,0 +1,21 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.menutest__ul {
+  border: 1px solid black;
+  width: 200px;
+}
+
+.menutest__li {
+  display: flex;
+  flex-direction: column;
+}
+
+#menu_img > img {
+  width: 200px;
+  height: 200px;
+  object-fit: scale-down;
+}
+

@@ -1,0 +1,78 @@
+#edit {
+  width: 100vw;
+  height: 100vh;
+}
+
+.edit__form{
+  background-color: #FFF5ED;
+  border-radius: 55px;
+  position: relative;
+  top: 15vh;
+  left: 25vw;
+  width: 50vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.edit__logo {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.edit__text {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+
+/* .edit__form > #edit__div {
+  display: flex;
+  text-align: center;
+  line-height: 4vh;
+} */
+
+/* #edit__setdiv {
+  background-color: #CFD0EE;
+  margin-top: 20px;
+  border-radius: 35px;
+  border: 0;
+  width: 12vw;
+  height: 4vh;
+}
+
+#edit__setdiv > * {
+  position: relative;
+  right: 5px;
+}
+#edit__setdiv:first-child {
+  margin-right: 20px
+} */
+
+
+.edit__form > .edit__input {
+  background-color: #CFD0EE;
+  border-radius: 35px;
+  border: 0;
+  width: 35vw;
+  height: 7.5vh;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.edit__signbutton {
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  width: 30%;
+  height: 4.5vh;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}

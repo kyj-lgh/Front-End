@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/admin_menu.css">
+  <link rel="stylesheet" href="stylesheets/header.css">
+  <link rel="stylesheet" href="stylesheets/footer.css">
+  <script defer src="javascripts/header_footer.js"></script>
+  <script defer src="javascripts/admin_menu.js"></script>
+  <title>YOUNG BAR Admin</title>
+</head>
+<body>
+  <header class="header">
+    <h1>
+      <a href="/" class="header__homelink">
+        YOUNG BAR
+      </a>
+    </h1>
+    <input type="checkbox" class="header__menu-btn">
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="menu">메뉴</a>
+        </li> 
+        <li class="header__nav-item">
+          <a href="notice">게시판</a>
+        </li>
+        <li class="header__nav-item item__on">
+          <a href="signup">회원가입</a>
+        </li>
+        <li class="header__nav-item item__on">
+          <a href="login">로그인</a>
+        </li>
+        <li class="header__nav-item item__none">
+          <a href="edit">회원정보수정</a>
+        </li>
+        <li class="header__nav-item item__none">
+          <a href="/" class="header__logout">로그아웃</a>
+        </li>
+        <li class="header__nav-item item__none" id="header__username">
+          <span class="header__username"></span>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="adminmenu">
+    <div class="adminmenu__div">
+      <ul class="adminmenu__ul">
+        <li class="adminmenu__li">이미지</li>
+        <li class="adminmenu__li">이름</li>
+        <li class="adminmenu__li">도수</li>
+        <li class="adminmenu__li">카테고리</li>
+        <li class="adminmenu__li">재료</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <h1 class="sr-only">Copyright</h1>
+    <div>
+      대표 : 권영주, 이경호<br>
+      TEL : 010-1234-5678<br>
+      E-Mail : youngbar@google.com
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/login.css">
+  <link rel="stylesheet" href="stylesheets/header.css">
+  <link rel="stylesheet" href="stylesheets/footer.css">
+  <script defer src="javascripts/login.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>
+      <a href="/" class="header__homelink">
+        YOUNG BAR
+      </a>
+    </h1>
+    <input type="checkbox" class="header__menu-btn">
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="menu">메뉴</a>
+        </li> 
+        <li class="header__nav-item">
+          <a href="notice">게시판</a>
+        </li>
+        <li class="header__nav-item item__on">
+          <a href="signup">회원가입</a>
+        </li>
+        <li class="header__nav-item item__on">
+          <a href="login">로그인</a>
+        </li>
+        <li class="header__nav-item item__none">
+          <a href="edit">회원정보수정</a>
+        </li>
+        <li class="header__nav-item item__none">
+          <a href="/" class="header__logout">로그아웃</a>
+        </li>
+        <li class="header__nav-item item__none" id="header__username">
+          <span class="header__username"></span>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="login">
+      <form class="login__form">
+        <p class="login__logo">YOUNG BAR</p>
+        <p class="login__text">로그인</p>
+        <input class="login__email" type="text" placeholder="이메일을 입력하세요." required>
+        <input class="login__passwd" type="password" placeholder="비밀번호를 입력하세요." required minlength="4">
+        <button class="login__loginbutton">Login</button>
+        <!-- <p class="login__passwdtext">비밀번호 기억이 안나신다면</p>
+        <button class="login__searchpasswd">비밀번호 찾기</button> -->
+      </form>
+  </section>
+
+  <footer>
+    <h1 class="sr-only">Copyright</h1>
+    <div>
+      대표 : 권영주, 이경호<br>
+      TEL : 010-1234-5678<br>
+      E-Mail : youngbar@google.com
+    </div>
+  </footer>
+</body>
+</html>

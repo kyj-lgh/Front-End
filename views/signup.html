@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/signup.css">
+  <link rel="stylesheet" href="stylesheets/header.css">
+  <link rel="stylesheet" href="stylesheets/footer.css">
+  <script defer src="javascripts/signup.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>
+      <a href="/" class="header__homelink">
+        YOUNG BAR
+      </a>
+    </h1>
+    <input type="checkbox" class="header__menu-btn">
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="menu">메뉴</a>
+        </li> 
+        <li class="header__nav-item">
+          <a href="notice">게시판</a>
+        </li>
+        <li class="header__nav-item item__on">
+          <a href="signup">회원가입</a>
+        </li>
+        <li class="header__nav-item item__on">
+          <a href="login">로그인</a>
+        </li>
+        <li class="header__nav-item item__none">
+          <a href="edit">회원정보수정</a>
+        </li>
+        <li class="header__nav-item item__none">
+          <a href="/" class="header__logout">로그아웃</a>
+        </li>
+        <li class="header__nav-item item__none" id="header__username">
+          <span class="header__username"></span>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="signup">
+      <form class="signup__form">
+        <p class="signup__logo">YOUNG BAR</p>
+        <p class="signup__text">회원가입</p>
+        <input class="signup__email" type="email" placeholder="이메일 입력 : example@gmail.com." required>
+        <input class="signup__age" type="text" placeholder="나이를 입력하세요." required>
+        <input class="signup__username" type="text" placeholder="닉네임을 입력하세요." required>
+        <input class="signup__date" type="date" placeholder="생년월일을 입력하세요." required>
+        <input class="signup__passwd" type="password" placeholder="비밀번호를 입력하세요." required>
+        
+        <button class="signup__signbutton">가입하기</button>
+      </form>
+  </section>
+
+  <footer>
+    <h1 class="sr-only">Copyright</h1>
+    <div>
+      대표 : 권영주, 이경호<br>
+      TEL : 010-1234-5678<br>
+      E-Mail : youngbar@google.com
+    </div>
+  </footer>
+</body>
+</html>
