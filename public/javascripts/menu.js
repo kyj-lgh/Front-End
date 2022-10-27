@@ -87,7 +87,6 @@ async function menuRecommend_Write() {
   for (let i = 0; i < 3; i++) {
     html += `
           <div class="container">
-            추천 메뉴 입니다!
             <div id="menu__img">
               <img src="${recommend_Menu[i].image}">
             </div>
