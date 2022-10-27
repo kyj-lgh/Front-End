@@ -27,6 +27,9 @@ router.get('/signup', function(req, res, next) {
 router.get('/notice', function(req, res, next) {
   res.render('notice', '');
 });
+router.get('/notice_list', function(req, res, next) {
+  res.render('notice_list', '');
+});
 
 router.get('/test_menu', function(req, res, next) {
   res.render('test_menu', '');

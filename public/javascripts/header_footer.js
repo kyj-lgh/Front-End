@@ -6,8 +6,6 @@ const login_username = localStorage.getItem("login-username");
 const nav = document.querySelector(".header__nav");
 const navLogout = nav.querySelector(".header__logout");
 
-const ip = `http://3.39.226.145:8000`;
-
 function userCheckHandler(access_token) {
   if(access_token) {
     const nav_li = nav.querySelectorAll(".item__on");

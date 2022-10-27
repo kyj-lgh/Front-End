@@ -1,33 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOUNG BAR</title>
+  <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+  <link rel="stylesheet" href="stylesheets/style.css">
   <link rel="stylesheet" href="stylesheets/test_menu.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="stylesheets/header.css">
+  <link rel="stylesheet" href="stylesheets/footer.css">
   <script defer src="javascripts/test_menu.js"></script>
+  <script defer src="javascripts/header_footer.js"></script>
 </head>
+
 <body>
-  <div id="menutest">
-    <ul class="menutest__ul">
-      <li class="menutest__li">
-        
-        <!-- div 를 활용해서 내부에 img 태그를 넣을 수 있다. -->
-        <div id="menu_img">
+  <header class="header">
+    <h1>
+      <a href="/" class="header__homelink">
+        YOUNG BAR
+      </a>
+    </h1>
+    <input type="checkbox" class="header__menu-btn">
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="menu">메뉴</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="notice">게시판</a>
+        </li>
+        <li class="header__nav-item item__on">
+          <a href="signup">회원가입</a>
+        </li>
+        <li class="header__nav-item item__on">
+          <a href="login">로그인</a>
+        </li>
+        <li class="header__nav-item item__none">
+          <a href="edit">회원정보수정</a>
+        </li>
+        <li class="header__nav-item item__none">
+          <a href="/" class="header__logout">로그아웃</a>
+        </li>
+        <li class="header__nav-item item__none" id="header__username">
+          <span class="header__username"></span>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
+  <div class="main__span">
+    <span>Menu</span>
+  </div>
+
+  <div id="menu">
+    <ul class="menu__ul">
+        <li class="menu__li">
+        <div class="menu__btn" id="menu__Recommend">Recommend</div>
+        <div class="menu__content" id="Recommend__content">
+          <!-- <div class="container">
+          <div id="menu__img"></div>
+            <div id="menu__span">
+              <span class="menu__name"></span>
+              <span class="menu__alcohol"></span>
+              <span class="menu__category"></span>
+              <span class="menu__ingredient"></span>
+            </div>
+            <div id="menu__img"></div>
+      
+          </div> -->
         </div>
-        <span class="menu__name"></span>
-        <span class="menu__alcohol"></span>
-        <span class="menu__category"></span>
-        <span class="menu__ingredient"></span>
       </li>
-      <li class="menutest__li"></li>
-      <li class="menutest__li"></li>
-      <li class="menutest__li"></li>
-      <li class="menutest__li"></li>
-
+      <li class="menu__li">
+        <div class="menu__btn" id="menu__Non">Non</div>
+        <div class="menu__content menu__none" id="Non__content">
+          <!-- <div id="menu__img"></div>
+            <div id="menu__span">
+              <span class="menu__name"></span>
+              <span class="menu__alcohol"></span>
+              <span class="menu__category"></span>
+              <span class="menu__ingredient"></span>
+            </div> -->
+        </div>
+      </li>
+      <li class="menu__li">
+        <div class="menu__btn" id="menu__Easy">Easy</div>
+        <div class="menu__content menu__none" id="Easy__content">
+          <!-- <div id="menu__img"></div>
+            <div id="menu__span">
+              <span class="menu__name"></span>
+              <span class="menu__alcohol"></span>
+              <span class="menu__category"></span>
+              <span class="menu__ingredient"></span>
+            </div> -->
+        </div>
+      </li>
+      <li class="menu__li">
+        <div class="menu__btn" id="menu__Normal">Normal</div>
+        <div class="menu__content menu__none" id="Normal__content">
+        </div>
+      </li>
+      <li class="menu__li">
+        <div class="menu__btn" id="menu__Hard">Hard</div>
+        <div class="menu__content menu__none" id="Hard__content">
+        </div>
+      </li>
+      <li class="menu__li">
+        <div class="menu__btn" id="menu__ExtraHard">ExtraHard</div>
+        <div class="menu__content menu__none" id="ExtraHard__content">
+        </div>
+      </li>
     </ul>
   </div>
+  </div>
+
+  <footer>
+    <h1 class="sr-only">Copyright</h1>
+    <div>
+      대표 : 권영주, 이경호<br>
+      TEL : 010-1234-5678<br>
+      E-Mail : youngbar@google.com
+    </div>
+  </footer>
 </body>
+
 </html>

@@ -64,7 +64,7 @@ function Post_UserSignup(newUser) {
       alert("회원가입에 성공하셨습니다!");
       location.href='/';
     } else {
-      alert("어,, 일단 이메일 비번 다시 적어봐요,,");
+      alert("이메일 혹은 비밀번호를 다시 입력해주세요.");
     }
   })
   .catch((error) => console.log(`error : ${error}`))

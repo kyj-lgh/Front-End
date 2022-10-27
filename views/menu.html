@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
   <script defer src="javascripts/menu.js"></script>
   <script defer src="javascripts/header_footer.js"></script>
 </head>
+
 <body>
   <header class="header">
     <h1>
@@ -25,7 +27,7 @@
       <ul class="header__nav-list">
         <li class="header__nav-item">
           <a href="menu">메뉴</a>
-        </li> 
+        </li>
         <li class="header__nav-item">
           <a href="notice">게시판</a>
         </li>
@@ -47,84 +49,72 @@
       </ul>
     </nav>
   </header>
-  
-  <section class="section__menu">
-    <div class="main__span">
-      <span>Menu</span>
-    </div>
-    <div class="main__div">
-      <div class="main__select">
-        <button class="main__tab" id="tab__Recommend" >추천</button>
-        <button class="main__tab menu__none" id="tab__Non">Non</button>
-        <button class="main__tab menu__none" id="tab__Easy">Easy</button>
-        <button class="main__tab menu__none" id="tab__Normal">Normal</button>
-        <button class="main__tab menu__none" id="tab__Hard">Hard</button>
-        <button class="main__tab menu__none" id="tab__ExtraHard">Extra Hard</button>
-      </div>
 
-      <div id="main__content">
-        <div id="tab__recommend" data-tab-content class="menu__recommend main__menu active">
-          <span>사장님이 직접 추천해주시는 Best Cocktail !!!</span>
-          <article class="article__menu01">
-            <div class="thumbnail">
-              <div class="image"></div>
-            </div>
-            <div class="article__text01">
-              <h2>Jin & Tonic</h2>
-              <div>재료 : Jin, Tonic Water</div>
-              <div>진과 토닉워터의 깔끔하고 청량한 맛</div>
-              <h3>8,000 원</h3>
-          </div>
-          </article>
-        </div>
+  <div class="main__span">
+    <span>Menu</span>
+    <p class="sub__span">카테고리 탭을 눌러보세요!</p>
+  </div>
 
-        <div id="tab__Easy" data-tab-content class="menu__Easy main__menu">
-          <h1>Easy Cocktail</h1>
-          <article class="article__menu01">
-            <div class="thumbnail">
-              <div class="image"></div>
+  <div id="menu">
+    <ul class="menu__ul">
+        <li class="menu__li">
+        <div class="menu__btn" id="menu__Recommend">Recommend</div>
+        <div class="menu__content" id="Recommend__content">
+          <!-- <div class="container">
+          <div id="menu__img"></div>
+            <div id="menu__span">
+              <span class="menu__name"></span>
+              <span class="menu__alcohol"></span>
+              <span class="menu__category"></span>
+              <span class="menu__ingredient"></span>
             </div>
-            <div class="article__text01">
-              <h2>Jin & Tonic</h2>
-              <div>재료 : Jin, Tonic Water</div>
-              <div>진과 토닉워터의 깔끔하고 청량한 맛</div>
-              <h3>8,000 원</h3>
-          </div>
-          </article>
-        </div>
-
-        <div id="tab__Normal" data-tab-content class="menu__Normal main__menu">
-          <h1>Normal Cocktail</h1>
-          <article class="article__menu01">
-            <div class="thumbnail">
-              <div class="image"></div>
-            </div>
-            <div class="article__text01">
-              <h2>Jin & Tonic</h2>
-              <div>재료 : Jin, Tonic Water</div>
-              <div>진과 토닉워터의 깔끔하고 청량한 맛</div>
-              <h3>8,000 원</h3>
-          </div>
-          </article>
-        </div>
-      </div>
+            <div id="menu__img"></div>
       
-      <!-- <div class="main__menu">
-        <h1>사장님이 직접 추천해주시는 Best Cocktail !!!</h1>
-        <article class="article__menu01">
-          <div class="thumbnail">
-            <div class="image"></div>
-          </div>
-          <div class="article__text01">
-            <h2>Jin & Tonic</h2>
-            <div>재료 : Jin, Tonic Water</div>
-            <div>진과 토닉워터의 깔끔하고 청량한 맛</div>
-            <h3>8,000 원</h3>
+          </div> -->
         </div>
-        </article>
-      </div> -->
-    </div>
-  </section>
+      </li>
+      <li class="menu__li">
+        <div class="menu__btn" id="menu__Non">Non</div>
+        <div class="menu__content menu__none" id="Non__content">
+          <!-- <div id="menu__img"></div>
+            <div id="menu__span">
+              <span class="menu__name"></span>
+              <span class="menu__alcohol"></span>
+              <span class="menu__category"></span>
+              <span class="menu__ingredient"></span>
+            </div> -->
+        </div>
+      </li>
+      <li class="menu__li">
+        <div class="menu__btn" id="menu__Easy">Easy</div>
+        <div class="menu__content menu__none" id="Easy__content">
+          <!-- <div id="menu__img"></div>
+            <div id="menu__span">
+              <span class="menu__name"></span>
+              <span class="menu__alcohol"></span>
+              <span class="menu__category"></span>
+              <span class="menu__ingredient"></span>
+            </div> -->
+        </div>
+      </li>
+      <li class="menu__li">
+        <div class="menu__btn" id="menu__Normal">Normal</div>
+        <div class="menu__content menu__none" id="Normal__content">
+        </div>
+      </li>
+      <li class="menu__li">
+        <div class="menu__btn" id="menu__Hard">Hard</div>
+        <div class="menu__content menu__none" id="Hard__content">
+        </div>
+      </li>
+      <li class="menu__li">
+        <div class="menu__btn" id="menu__ExtraHard">ExtraHard</div>
+        <div class="menu__content menu__none" id="ExtraHard__content">
+        </div>
+      </li>
+    </ul>
+  </div>
+  </div>
 
   <footer>
     <h1 class="sr-only">Copyright</h1>
@@ -135,4 +125,5 @@
     </div>
   </footer>
 </body>
+
 </html>

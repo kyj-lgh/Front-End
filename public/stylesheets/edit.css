@@ -76,3 +76,15 @@
   margin-bottom: 20px;
   cursor: pointer;
 }
+
+.edit__deletebutton {
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  width: 30%;
+  height: 4.5vh;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+}

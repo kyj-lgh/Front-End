@@ -10,7 +10,6 @@ const userAge = editForm.querySelector('.edit__age');
 const userName = editForm.querySelector('.edit__username');
 const userDate = editForm.querySelector('.edit__date');
 
-
 const edit_ip = `http://3.39.226.145:8000`;
 
 function Get_UserList() {
@@ -48,20 +47,20 @@ function Get_UserAdmin() {
 }
 
 
-function Get_UserToken() {
-  const url = `${edit_ip}/account/user/list/`;
+// function Get_UserToken() {
+//   const url = `${edit_ip}/account/user/list/`;
 
-  return fetch(url)
-  .then((res) =>res.json())
-  .then((data) => {
-    for(let i = 0; i<Object.keys(data).length; i++) {
-      if(data[i].username === local_username) {
-        const userToken = data[i].token;
-        return userToken;
-      }
-    }
-  })
-}
+//   return fetch(url)
+//   .then((res) =>res.json())
+//   .then((data) => {
+//     for(let i = 0; i<Object.keys(data).length; i++) {
+//       if(data[i].username === local_username) {
+//         const userToken = data[i].token;
+//         return userToken;
+//       }
+//     }
+//   })
+// }
 
 function Get_UserId() {
   const url = `${edit_ip}/account/user/list/`;
@@ -88,7 +87,8 @@ async function userEditHandler(event) {
     date : userDate.value,
   };
   newUser.id = await Get_UserId();
-  newUser.token = await Get_UserToken();
+  newUser.token = edit_UserToken;
+  // newUser.token = await Get_UserToken();
 
   Pacth_UserEdit(newUser);
 }
@@ -114,6 +114,7 @@ function Pacth_UserEdit(newUser) {
   window.localStorage.removeItem("login-username");
   window.localStorage.setItem("login-username", data.username)
 
+  console.log(data.username);
   alert("정보를 수정하였습니다!");
   location.href = "/";
 })

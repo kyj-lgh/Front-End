@@ -33,7 +33,7 @@ function Post_UserLogin(userEmail, userPasswd) {
       alert("로그인에 성공 했습니다!");
       location.href='/';
     } else {
-      alert("어,, 일단 이메일 비번 다시 적어봐요,,")
+      alert("이메일 혹은 비밀번호를 다시 입력해주세요.")
     }
   })
 

@@ -131,6 +131,7 @@ function Post_CocktailCreate() {
 
 // Get_NewUrlUserList();
 
+// const newIp = 'mycocktail.shop';
 // 게시판
 function Get_PostsList() {
   const url = `${ip}/posts`;
@@ -140,4 +141,39 @@ function Get_PostsList() {
   .then((data) => {console.log(data);})
 }
 
-Get_PostsList();
+// Get_PostsList();
+const UserToken = window.localStorage.getItem("access-token");
+console.log(UserToken);
+
+// 유저 삭제
+// function Delete_User() {
+//   fetch(`${ip}/account/user/3/`, 
+//   {
+//     method: 'DELETE',
+//     headers: { 
+//       'Content-Type' : 'application/json',
+//       Authorization: `token ${UserToken}`,
+//     },
+//   }
+//   .then((res) => res.json())
+//   .then((data) => {
+//     console.log(data.username);
+//     alert("회원정보를 삭제했습니다!");
+//   })
+// }
+
+// Delete_User();
+
+// 유저삭제
+function Delete_User() {
+  fetch(`${ip}/account/user/3`, {
+    method: 'DELETE',
+    headers: { 'Content-Type' : 'application/json'},
+    body: JSON.stringify({
+    })
+  })
+  .then((res) => res.json())
+  .then((data) => console.log(data))
+};
+
+Delete_User();
